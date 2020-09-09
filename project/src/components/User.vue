@@ -12,10 +12,10 @@
                 <div>
                   <v-card-title
                     class="headline"
-                    v-text="userName"
+                    v-text="user.userName"
                   ></v-card-title>
 
-                  <v-card-subtitle v-text="userDescription"></v-card-subtitle>
+                  <v-card-subtitle v-text="user.userDescription"></v-card-subtitle>
 
                   <v-btn class="ml-3" color="warning">Edit</v-btn>
                   <v-btn class="ml-3" color="primary">Settings</v-btn>
@@ -39,15 +39,14 @@
                 <v-flex xs12 sm6 offset-sm3>
                     <v-row>
                         <v-col
-                        v-for="n in 15"
-                        :key="n"
+                        v-for="(images, i) in user.userImages"
+                        :key="i"
                         class="d-flex child-flex"
                         cols="4"
                         >
                         <v-card flat tile class="d-flex">
                             <v-img
-                            :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                            :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+                            :src="user.userImages[i].src"
                             aspect-ratio="1"
                             class="grey lighten-2"
                             >
@@ -63,15 +62,11 @@
 
 <script>
 export default {
-    data() {
-        return {
-            userName: 'levkin_hookah',
-            userDescription: 'its test user description',
-            postCounter: 0,
-            followersCounter: 0,
-            followCounter: 0,
-        };
-    },
+  computed: {
+    user() {
+      return this.$store.getters.getUser
+    }
+  }
 };
 </script>
 
