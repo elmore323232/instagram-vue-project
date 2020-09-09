@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <v-container class="fill-height" fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" sm="8" md="6">
@@ -34,10 +35,15 @@
         </v-card>
       </v-col>
     </v-row>
+=======
+  <v-container>
+      
+>>>>>>> levkin_branch
   </v-container>
 </template>
 
 <script>
+<<<<<<< HEAD
     export default {
         data(){
             return{
@@ -73,12 +79,20 @@
         }
         
     }
+=======
+export default {
+}
+>>>>>>> levkin_branch
 </script>
 
 <style>
 
+<<<<<<< HEAD
 .gradient{
     background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     }
 
 </style>
+=======
+</style>
+>>>>>>> levkin_branch
