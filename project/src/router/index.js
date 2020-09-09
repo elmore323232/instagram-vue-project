@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 import Login from '../components/auth/Login'
 import Registration from '../components/auth/Registration'
 import User from '../components/User'
@@ -15,15 +14,15 @@ Vue.use(VueRouter)
     },
     {
       path: '/registration',
-      component: Login,
+      component: Registration,
     },
     {
       path: '/User',
-      component: Login,
+      component: User,
     },
     {
       path: '/Feed',
-      component: Login,
+      component: Feed,
     },
 ]
 
