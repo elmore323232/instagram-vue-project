@@ -1,7 +1,8 @@
 import Vue from 'vue'
-import user from './userprofile'
-import Vuex from 'vuex'
+import userprofile from './userprofile'
+
 import user from './user'
+import Vuex from 'vuex'
 import shared from './shared'
 
 
@@ -11,9 +12,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   modules: {
     user,
-<<<<<<< HEAD
-    shared
-=======
->>>>>>> levkin_branch
+    shared,
+    userprofile,
   }
 })
