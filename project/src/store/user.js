@@ -7,6 +7,7 @@ export default({
   state: {
     userName: 'levkin_hookah',
     userDescription: 'its test user description',
+    userIcon: 'https://pbs.twimg.com/media/EcZzOJbXgAEpndc.jpg',
     userImages: [
         {
             date: '',
@@ -57,6 +58,7 @@ export default({
               username: state.userName,
               userDescription: state.userDescription,
               userImages: state.userImages,
+              userIcon: state.userIcon,
               postCounter: state.postCounter,
               followersCounter: state.followCounter,
               followCounter: state.followCounter,

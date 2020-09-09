@@ -25,7 +25,7 @@
                   class="ma-3"
                   size="150"
                 >
-                  <v-img src="https://pbs.twimg.com/media/EcZzOJbXgAEpndc.jpg"></v-img>
+                  <v-img :src="user.userIcon"></v-img>
                 </v-avatar>
               </div>
             </v-card>
